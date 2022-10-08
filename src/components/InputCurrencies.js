@@ -1,8 +1,11 @@
+import React from 'react';
+import './InputCurrencies.css';
+
 const InputCurrencies = (props) => {
     return (
         <div className="input-currency">
-            <h2 className="input-currency__kind">{props.text}</h2>
-            <select onChange={props.handleInputChange} value={props.value}>
+            <label className="input-currency__kind" for={props.id}>{props.text}</label>
+            <select onChange={props.handleInputChange} id={props.id} className="input-currency__select" value={props.value}>
                 <option value="AUD">Australian Dollar</option>
                 <option value="BGN">Bulgarian Lev</option>
                 <option value="CAD">Canadian Dollar</option>

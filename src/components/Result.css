@@ -1,0 +1,12 @@
+.result {
+    display: block;
+    padding: 10px;
+    height: 50px;
+    /* background-color: #fff; */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.result__value {
+    font-size: 3rem;
+}
