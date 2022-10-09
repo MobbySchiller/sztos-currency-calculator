@@ -2,15 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-}
-
-.input-amount__label {
-    font-size: 2rem;
+    padding: 1rem;
 }
 
 .input-amount__input {
-    padding: 6px;
+    padding: 1rem;
     border: 2px solid var(--darker-primary-color);
     border-radius: var(--border-radius);
+    font-size: 1.8rem;
+    font-weight: 700;
 }

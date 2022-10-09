@@ -4,7 +4,7 @@ import './InputCurrencies.css';
 const InputCurrencies = (props) => {
     return (
         <div className="input-currency">
-            <label className="input-currency__kind" for={props.id}>{props.text}</label>
+            <label className="label input-currency__kind" for={props.id}>{props.text}</label>
             <select onChange={props.handleInputChange} id={props.id} className="input-currency__select" value={props.value}>
                 <option value="AUD">Australian Dollar</option>
                 <option value="BGN">Bulgarian Lev</option>

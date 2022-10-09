@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 :root {
+  --background-color: #325673;
   --darker-primary-color: #1E88E5;
   --primary-color: #2196F3;
   --text-color: #fff;
@@ -15,7 +16,32 @@
 
 html,
 body {
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
+}
+
+@media (max-height: 500px) and (orientation: portrait) {
+
+  html,
+  body {
+    font-size: 9px;
+  }
+}
+
+@media(min-width: 400px) {
+
+  html,
+  body {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 660px) and (max-height: 340px) and (orientation: landscape) {
+
+  html,
+  body {
+    font-size: 6px;
+  }
 }
