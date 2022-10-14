@@ -1,12 +1,11 @@
 import React from 'react';
 import './InputChangeValue.css';
 
-const InputChangeValue = (props) => {
-    return (
-        <div className="input-amount">
-            <label className="label input-amount__label" for={props.id}>Amount</label>
-            <input onChange={props.handleInput} type="number" id={props.id} className="input-amount__input" value={props.amount} min='0' placeholder='' />
-        </div>
-    )
-}
+const InputChangeValue = ({ id, amount, handleInput }) => (
+    <div className="input-amount">
+        <label className="label input-amount__label" htmlFor={id}>Amount</label>
+        <input onChange={handleInput} type="number" id={id} className="input-amount__input" value={amount} min='0' placeholder='' />
+    </div>
+)
+
 export default InputChangeValue;
